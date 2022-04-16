@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t ubnd/node-app:latest .'
+				sh 'docker build -t ubnd/node-app:$BUILD_NUMBER .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push ubnd/node-app:latest'
+				sh 'docker push ubnd/node-app:$BUILD_NUMBER'
 			}
 		}
 	}
