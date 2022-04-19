@@ -11,7 +11,7 @@ function onHttpStart() {
 // setup a 'route' to listen on the default url path (http://localhost)
 app.get("/", function (req, res) {
   res.send(
-    "<h1>Image version 16 - Simple Node App</h1><br /><a href='/about'>Go to the about page</a>"
+    "<h1>Image version 17 - Simple Node App</h1><br /><a href='/about'>Go to the about page</a>"
   );
 });
 
